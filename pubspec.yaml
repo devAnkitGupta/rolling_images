@@ -1,6 +1,6 @@
 name: rolling_images
 description: A package to exhibit your work portfolio/products catalogue with rolling images.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/devAnkitGupta/rolling_images
 
 environment:
