@@ -1,48 +1,68 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+A package to show your work portfolio/products catalogue with rolling images
 
 ## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+import 'package:rolling_images/rolling_images.dart';
+
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Rolling Images',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: RollingCards(
+        viewportFraction: 1,
+        imageUrls: const [
+          'https://images.pexels.com/photos/11730329/pexels-photo-11730329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://images.pexels.com/photos/2295744/pexels-photo-2295744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://images.pexels.com/photos/3777622/pexels-photo-3777622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://images.pexels.com/photos/3186010/pexels-photo-3186010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        ],
+        isLocalAsset: false,
+        onPageChanged: (int page) {
+          // Get Notified about current page
+        },
+      ),
+    );
+  }
+}
+
 ```
+## Features
+## App Screenshots
 
-## Additional information
+<table>
+  <tr>
+    <td>BoxShape = Rectangle</td>
+     <td>BoxShape = Circle</td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/devAnkitGupta/rolling_images/master/assets/images/rollingImageRect.gif"></td>
+    <td><img src="https://raw.githubusercontent.com/devAnkitGupta/rolling_images/master/assets/images/rollingImageCircle.gif"></td>
+  </tr>
+ </table>
 
-
-
-<img src='https://raw.githubusercontent.com/devAnkitGupta/rolling_images/master/assets/images/rollingImageRect.gif'>
+## Web Screenshots
 
 <img src='https://raw.githubusercontent.com/devAnkitGupta/rolling_images/master/assets/images/rollingImageWeb.gif'>
 
-<img src='https://raw.githubusercontent.com/devAnkitGupta/rolling_images/master/assets/images/rollingImageCircle.gif'>
-
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
