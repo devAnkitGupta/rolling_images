@@ -34,11 +34,13 @@ const like = 'sample';
 
 ## Additional information
 
-<img src='https://raw.githubusercontent.com/devAnkitGupta/rolling_images/master/assets/images/rollingImageRect.gif' width='300' height='400' >
 
-<img src='https://raw.githubusercontent.com/devAnkitGupta/rolling_images/master/assets/images/rollingImageWeb.gif' width='300' height='400' >
 
-<img src='https://raw.githubusercontent.com/devAnkitGupta/rolling_images/master/assets/images/rollingImageCircle.gif' width='300' height='400' >
+<img src='https://raw.githubusercontent.com/devAnkitGupta/rolling_images/master/assets/images/rollingImageRect.gif'>
+
+<img src='https://raw.githubusercontent.com/devAnkitGupta/rolling_images/master/assets/images/rollingImageWeb.gif'>
+
+<img src='https://raw.githubusercontent.com/devAnkitGupta/rolling_images/master/assets/images/rollingImageCircle.gif'>
 
 
 TODO: Tell users more about the package: where to find more information, how to
