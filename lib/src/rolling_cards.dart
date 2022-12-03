@@ -47,11 +47,17 @@ class _RollingCardsState extends State<RollingCards> {
 
   @override
   void didChangeDependencies() {
-    _controller.addListener(() {
-      Future.microtask(() => setState(() {
-            currentPage = _controller.page!;
-          }));
-    });
+    _controller.addListener(
+      () {
+        Future.microtask(
+          () => setState(
+            () {
+              currentPage = _controller.page!;
+            },
+          ),
+        );
+      },
+    );
     super.didChangeDependencies();
   }
 
