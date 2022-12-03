@@ -1,7 +1,7 @@
 name: rolling_images
-description: A new Flutter package project.
+description: A package to exhibit your work portfolio/products catalogue with rolling images.
 version: 0.0.1
-homepage:
+homepage: https://github.com/devAnkitGupta/rolling_images
 
 environment:
   sdk: '>=2.18.5 <3.0.0'

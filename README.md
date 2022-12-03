@@ -1,5 +1,5 @@
 
-A package to show your work portfolio/products catalogue with rolling images
+A package to exhibit your work portfolio/products catalogue with rolling images.
 
 ## Getting started
 ## Usage
