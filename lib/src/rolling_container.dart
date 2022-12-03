@@ -2,9 +2,16 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class ImageCard extends StatelessWidget {
+  /// Index of Image
   final int idx;
+
+  /// Current page in mainView
   final double currentPage;
+
+  /// Address of the image
   final String url;
+
+  /// How a box should be inscribed into another box.
   final BoxFit fit;
   final EdgeInsets margin;
   final double borderRadius;
@@ -26,6 +33,8 @@ class ImageCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double relativePosition = idx - currentPage;
+
+    /// Transforming the child images.
     return Transform(
       transform: Matrix4.identity()
         ..setEntry(3, 2, 0.002)
