@@ -34,7 +34,11 @@ const like = 'sample';
 
 ## Additional information
 
-<img src='https://raw.githubusercontent.com/akku-akki/flutter_toggle_animated/master/assets/animate.gif' width='300' height='500' >
+<img src='https://raw.githubusercontent.com/akku-akki/rolling_images/master/assets/rollingImageRect.gif' width='300' height='400' >
+
+<img src='https://raw.githubusercontent.com/akku-akki/rolling_images/master/assets/rollingImageWeb.gif' width='300' height='400' >
+
+<img src='https://raw.githubusercontent.com/akku-akki/rolling_images/master/assets/rollingImageCircle.gif' width='300' height='400' >
 
 
 TODO: Tell users more about the package: where to find more information, how to
